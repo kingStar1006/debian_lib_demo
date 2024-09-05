@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+# Enable verbose output for debugging
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	make
+
+override_dh_auto_clean:
+	make clean
+
+override_dh_auto_install:
+	install -d $(DESTDIR)/usr/bin
+	install -m 755 hello-isar $(DESTDIR)/usr/bin/hello-isar

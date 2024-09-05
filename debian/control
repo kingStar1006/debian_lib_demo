@@ -1,0 +1,12 @@
+Source: helloworld
+Section: misc
+Priority: optional
+Maintainer: Your Name <your.email@example.com>
+Build-Depends: debhelper (>= 9), g++
+Standards-Version: 3.9.6
+
+Package: helloworld
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A simple Hello World program for ISAR using dpkg
+ This package demonstrates how to build a simple C++ program using dpkg style in ISAR.
