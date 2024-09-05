@@ -7,7 +7,7 @@ TARGET = hello-isar
 all: $(TARGET)
 
 $(TARGET): main.o
-	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o $(LDFLAGS)
 
 main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c main.cpp
