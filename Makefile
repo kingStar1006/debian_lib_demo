@@ -1,5 +1,6 @@
 CXX = g++
 CXXFLAGS = -Wall -g
+LDFLAGS = -lcurl
 
 TARGET = hello-isar
 
