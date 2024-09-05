@@ -14,5 +14,5 @@ override_dh_auto_clean:
 
 override_dh_auto_install:
 	dh_auto_install
-	install -d $(DESTDIR)/usr/bin
-	install -m 755 hello-isar $(DESTDIR)/usr/bin/hello-isar
+	dh_install hello-isar usr/bin/
+
